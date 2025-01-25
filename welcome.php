@@ -28,9 +28,16 @@ if (isset($_SESSION['user'])){
    </style>
 </head>
 <body>
- 
- 
-<a href="php/logout.php"><button class="btn">Logout</button></a>
+    <div class="welcome-container">
+        <h2>Hello and Welcome, <span><?php echo ($user['name']); ?></span>!</h2>
+        <p><strong>Here’s your account information:</strong></p>
+        <p><span>Username:</span> <?php echo ($user['username']); ?></p>
+        <p><span>Password:</span> <?php echo ($user['password']); ?></p>
+        <p><span>Department:</span> <?php echo ($user['department']); ?></p>
+        <p><span>Course:</span> <?php echo ($user['course']); ?></p>
+        <p><span>Email:</span> <?php echo ($user['email']); ?></p>
+        <a href="php/logout.php"><button class="btn">Logout</button></a>
+    </div>
  
 </body>
 </html>

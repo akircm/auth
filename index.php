@@ -20,6 +20,10 @@
         <input type="password" name="password" class="input-field" placeholder="Password" required autocomplete="off"><br>
         <button type="submit" class="btn">Login</button>
     </form>
+
+    <p style="text-align:center; margin-top:10px;">
+        <a href="register.php" style="color: blue;">Don't have an account? Register here</a>
+    </p>
 </div>
  
 </body>
